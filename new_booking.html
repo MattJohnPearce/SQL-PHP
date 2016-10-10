@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sam's Guest House</title>
+  
+<!-- Bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<nav class="navbar navbar-default">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myDefaultNavbar1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html">Home</a> </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="myDefaultNavbar1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="login_manager.html">Manager Login <span class="sr-only">(current)</span></a></li>
+        <li></li>
+        <li class="dropdown">
+<ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group"> </div>
+</form>
+</div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+
+<section>
+  <div class="jumbotron text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs12">
+          <h1>Bookings</h1>
+          <p>Fill in the following fields </p>
+        </div>
+          </div>
+          <form action="new_booking.php" method="post" target="iframe"><p class="blockText2">
+            Your Guest ID:<span style="margin-right:2.5em;"></span> <input type="text" name="InsertGuestID"><br>
+            
+            Date of Arrival: <span style="margin-right:2.5em;"></span><input type="date" name="InsertDateFrom"><br>
+            Date of Departure: <span style="margin-right:.9em;"></span><input type="date" name="InsertDateTo"><br>
+            Which Location would you like?
+  	<select name="InsertGuestHouse">
+    <option value="1">Murdoch</option>
+    <option value="2">Northbridge</option>
+    <option value="3">Sunny Hills</option>
+    <option value="4">Marrickville</option>
+    <option value="5">Chapel Hill</option>
+    <option value="6">Fairfield</option>
+    <option value="7">Stuart Park</option>
+    <option value="8">Wulagi</option>
+    <option value="9">Edithvale</option>
+    <option value="10">Westmeadow</option>
+  </select><br>
+            What room would you like? <br>
+  <input type="radio" name="InsertRoom"  value = "101">
+            Room 01 comes with King sized Double bed for $150<br>
+  <input type="radio" name="InsertRoom"  value = "102">
+            Room 02 comes with Double Bed for $120<br>
+  <input type="radio" name="InsertRoom"  value = "103">
+            Room 03 comes with two single Beds for $115<br>
+  <input type="radio" name="InsertRoom"  value = "104">
+            Room 04 comes with a double and two single beds for $130<br>
+  <script>
+	function setURL(url){
+    document.getElementById('iframe').src = url;
+}
+</script>
+<input type="submit" onclick="setURL('new_booking.php')" value="Confirm Booking">
+<p><iframe name ="iframe" id="iframe" src=" " style="" width="100%" height="400" frameborder="0"></iframe></p>
+          </p></form>
+          <form class="navbar-form navbar-right" role="search">
+            <div class="form-group"> </div>
+</form>
+        </div>
+        </div>
+
+</section>
+<section> </section>
+<hr>
+<hr>
+<div class="section well">
+    <div class="container"> </div>
+	</div>
+    <footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>Copyright © Sams Guest Houses. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/jquery-1.11.2.min.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
